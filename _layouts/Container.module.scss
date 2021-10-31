@@ -1,0 +1,30 @@
+@import "/styles/variables";
+@import "/styles/breakpoints";
+
+div.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $container_size;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include extraLargeScreens {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+div.containerFluid {
+  position: relative;
+  width: 100%;
+}
+
+div.heroCont {
+  // height: calc(100vh - 60px);
+  height: fit-content;
+  margin-top: 60px;
+  @include mediumScreens {
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+  }
+}
