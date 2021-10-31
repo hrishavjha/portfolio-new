@@ -20,11 +20,10 @@ div.containerFluid {
 }
 
 div.heroCont {
-  // height: calc(100vh - 60px);
   height: fit-content;
-  margin-top: 60px;
+  padding-top: 60px;
   @include mediumScreens {
     height: calc(100vh - 80px);
-    margin-top: 80px;
+    padding-top: 80px;
   }
 }

@@ -1,19 +1,30 @@
+import styles from "@components/HomePage/Home.module.scss";
+import { Paragraph } from "@includes/Texts";
 import { HeroContainer } from "@layouts/Container";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <HeroContainer>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo a sunt
-      quas alias in laudantium aperiam quasi est ipsam quisquam iusto
-      recusandae, tenetur tempore? Voluptates quam repellat accusantium rerum
-      excepturi! Consequatur, ea fuga! Eaque maiores cum consequuntur ut fugiat
-      voluptatem cumque doloribus voluptas veritatis culpa! Ratione, illum nulla
-      quibusdam porro error fugit distinctio mollitia laborum dolorem ad sint
-      alias quam. Vitae illo optio veniam tempora laboriosam eaque voluptas sit
-      soluta, repellendus quas enim dolor blanditiis aliquid officia, mollitia
-      nostrum illum. Enim molestias nam dolore maxime quisquam nobis pariatur
-      reprehenderit corrupti. Repudiandae, cumque! Magni repellendus minima
-      distinctio repellat, libero ratione, dolores in vero ad dicta, odit
+    <HeroContainer className="flex items-center py-10 md:py-0">
+      <div className={styles.heroCont}>
+        <h1>Hi,</h1>
+        <h1>I'm Hrishav,</h1>
+        <h1>Developer.</h1>
+        <Paragraph className="max-w-xl mt-4">
+          I'm a web developer based in India specializing in building (and
+          occasionally designing) exceptional websites, applications, and
+          everything in between.
+        </Paragraph>
+        <Link href="mailto:jha2506@gmail.com">
+          <a
+            className={styles.contactBtn}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Contact Me
+          </a>
+        </Link>
+      </div>
     </HeroContainer>
   );
 };

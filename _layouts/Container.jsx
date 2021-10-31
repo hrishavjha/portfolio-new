@@ -25,7 +25,9 @@ const ContainerFluid = props => {
 const HeroContainer = props => {
   return (
     <ContainerFluid className={styles.heroCont}>
-      <Container>{props.children}</Container>
+      <Container className={`h-full ${props.className}`}>
+        {props.children}
+      </Container>
     </ContainerFluid>
   );
 };
