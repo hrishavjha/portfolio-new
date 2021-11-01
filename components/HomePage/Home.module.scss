@@ -10,6 +10,7 @@ div.heroCont {
   flex-direction: column;
   gap: 2rem;
   @include mediumScreens {
+    gap: 4rem;
     flex-direction: row;
   }
   div.leftCont {
@@ -80,16 +81,87 @@ div.heroCont {
 
 div.skillContFluid {
   background: $primary-text;
-  padding: 5rem 0;
+  padding: 2rem 0;
   width: 100%;
+  @include mediumScreens {
+    padding: 5rem 0;
+  }
   div.skillCont {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 2rem;
     @include mediumScreens {
       flex-direction: row;
+      gap: 4rem;
     }
     div.leftCont {
+      width: 100%;
+      @include mediumScreens {
+        width: 50%;
+      }
+      div.skillSliders {
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        div.slider {
+          width: 100%;
+          h3 {
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 700;
+            @include mediumScreens {
+              font-size: 1.1rem;
+            }
+          }
+          div.sliderBar {
+            margin-top: 0.5rem;
+            height: 3px;
+            background-color: #3f3f3f;
+          }
+        }
+      }
+      div.jobExp {
+        margin-top: 2rem;
+        div.jobCard {
+          border-radius: 10px;
+          background: #1d1d1d;
+          padding: 2rem 1.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include smallScreens {
+            max-width: 300px;
+          }
+          h3 {
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 500;
+            @include mediumScreens {
+              font-size: 1rem;
+            }
+          }
+          p.company {
+            color: #bcbfc2;
+            font-size: 0.85rem;
+            @include mediumScreens {
+              font-size: 0.9rem;
+            }
+          }
+          p.timeSpan {
+            color: #bcbfc2;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.02rem;
+          }
+        }
+      }
+    }
+    div.rightCont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 100%;
       @include mediumScreens {
         width: 50%;

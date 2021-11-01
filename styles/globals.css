@@ -31,7 +31,7 @@ button {
 }
 
 ::selection {
-  background: #333333;
+  background: #000;
   color: #fff;
 }
 
@@ -44,6 +44,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #333333;
+  background-color: #000;
   border-radius: 5px;
 }

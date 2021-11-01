@@ -32,7 +32,7 @@ const Hero = () => {
           <h1>Hi,</h1>
           <h1>I'm Hrishav,</h1>
           <h1 id="typewriter"></h1>
-          <Paragraph className="max-w-xl mt-4">
+          <Paragraph hint className="sm:max-w-xl mt-4">
             I'm a web developer based in India specializing in building (and
             occasionally designing) exceptional websites, applications, and
             everything in between.

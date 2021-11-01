@@ -33,6 +33,7 @@ module.exports = {
       white: colors.white,
       blue: colors.blue,
       hint: "#5f6368",
+      dark_hint: "#bcbfc2",
       hint_bg: "#F8F9FA"
     }
   },
