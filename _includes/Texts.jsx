@@ -6,7 +6,13 @@ const Paragraph = props => {
       className={`${props.className} ${styles.paragraph} ${
         props.hint ? "text-hint" : "text-primary"
       } ${
-        props.bold ? "font-medium" : props.light ? "font-light" : "font-normal"
+        props.bold
+          ? "font-medium"
+          : props.light
+          ? "font-light"
+          : props.dark
+          ? "text-white"
+          : "font-normal"
       }`}
       style={props.style}
     >
