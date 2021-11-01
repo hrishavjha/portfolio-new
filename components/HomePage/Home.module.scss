@@ -1,0 +1,183 @@
+@import "/styles/variables";
+@import "/styles/breakpoints";
+
+// Hero Section
+
+div.heroCont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  @include mediumScreens {
+    gap: 4rem;
+    flex-direction: row;
+  }
+  div.leftCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include mediumScreens {
+      width: 50%;
+    }
+    h1 {
+      font-size: 2rem;
+      line-height: 1;
+      font-weight: 700;
+      color: $primary-text;
+      @include mediumScreens {
+        font-size: 3rem;
+      }
+      @include largeScreens {
+        font-size: 4rem;
+      }
+    }
+    a.contactBtn {
+      box-shadow: inset 0 0 0 1px $primary_text;
+      color: $primary_text;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-block;
+      margin-top: 1.5rem;
+      text-align: center;
+      @include smallScreens {
+        max-width: 200px;
+      }
+      @include mediumScreens {
+        width: 200px;
+      }
+      @include mediumScreens {
+        font-size: 1rem;
+      }
+      &:hover {
+        background: $primary_text;
+        color: #fff;
+      }
+    }
+  }
+  div.rightCont {
+    img {
+      margin: 0 auto;
+      max-width: 300px;
+      max-height: 300px;
+      @include mediumScreens {
+        max-width: 400px;
+        max-height: 400px;
+      }
+      @include largeScreens {
+        max-width: 500px;
+        max-height: 500px;
+      }
+    }
+  }
+}
+
+// Hero Section Ends
+
+// Skills Section
+
+div.skillContFluid {
+  background: $primary-text;
+  padding: 2rem 0;
+  width: 100%;
+  @include mediumScreens {
+    padding: 5rem 0;
+  }
+  div.skillCont {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    @include mediumScreens {
+      flex-direction: row;
+      gap: 4rem;
+    }
+    div.leftCont {
+      width: 100%;
+      @include mediumScreens {
+        width: 50%;
+      }
+      div.skillSliders {
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        div.slider {
+          width: 100%;
+          h3 {
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 700;
+            @include mediumScreens {
+              font-size: 1.1rem;
+            }
+          }
+          div.sliderBar {
+            margin-top: 0.5rem;
+            height: 3px;
+            background-color: #3f3f3f;
+          }
+        }
+      }
+      div.jobExp {
+        margin-top: 2rem;
+        div.jobCard {
+          border-radius: 10px;
+          background: #1d1d1d;
+          padding: 2rem 1.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include smallScreens {
+            max-width: 300px;
+          }
+          h3 {
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 500;
+            @include mediumScreens {
+              font-size: 1rem;
+            }
+          }
+          p.company {
+            color: #bcbfc2;
+            font-size: 0.85rem;
+            @include mediumScreens {
+              font-size: 0.9rem;
+            }
+          }
+          p.timeSpan {
+            color: #bcbfc2;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.02rem;
+          }
+        }
+      }
+    }
+    div.rightCont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      @include mediumScreens {
+        width: 50%;
+      }
+      h2 {
+        line-height: 1;
+        font-size: 1.6rem;
+        color: #fff;
+        font-weight: 700;
+        @include mediumScreens {
+          font-size: 2rem;
+        }
+        @include largeScreens {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
