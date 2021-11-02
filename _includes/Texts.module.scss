@@ -7,3 +7,28 @@ p.paragraph {
     font-size: 1rem;
   }
 }
+
+h1.heroHead {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: $primary-text;
+  @include mediumScreens {
+    font-size: 3rem;
+  }
+  @include largeScreens {
+    font-size: 4rem;
+  }
+}
+
+h2.bodyHead {
+  line-height: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  @include mediumScreens {
+    font-size: 2rem;
+  }
+  @include largeScreens {
+    font-size: 3rem;
+  }
+}

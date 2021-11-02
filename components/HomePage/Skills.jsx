@@ -1,30 +1,22 @@
 const { Container } = require("@layouts/Container");
 const { ContainerFluid } = require("@layouts/Container");
 import styles from "@components/HomePage/Home.module.scss";
-import { Paragraph } from "@includes/Texts";
+import { BodyHead, Paragraph } from "@includes/Texts";
 import Link from "next/link";
 
 const Skills = () => {
   const Skills = [
     {
       name: "Front-end",
-      perc: 90,
-      color: "#3DB2FF"
+      tech: ["jquery", "js", "next", "gatsby", "sass", "react"]
     },
     {
       name: "Back-end",
-      perc: 76,
-      color: "#ff5930"
+      tech: ["django", "node", "laravel"]
     },
     {
       name: "UI/UX",
-      perc: 60,
-      color: "#E1578A"
-    },
-    {
-      name: "ReactJS",
-      perc: 81,
-      color: "#FF8243"
+      tech: ["xd", "figma"]
     }
   ];
 
@@ -36,11 +28,15 @@ const Skills = () => {
             {Skills.map(skill => (
               <div key={skill.name} className={styles.slider}>
                 <h3>{skill.name}</h3>
-                <div className={styles.sliderBar}>
-                  <div
-                    className="h-full"
-                    style={{ width: `${skill.perc}%`, background: skill.color }}
-                  ></div>
+                <div className={styles.logoBar}>
+                  {skill.tech.map(lang => (
+                    <img
+                      key={lang}
+                      src={`/home/skills/${lang}.svg`}
+                      alt={lang}
+                      draggable={false}
+                    />
+                  ))}
                 </div>
               </div>
             ))}
@@ -54,9 +50,9 @@ const Skills = () => {
           </div>
         </div>
         <div className={styles.rightCont}>
-          <h2>Skills & Experience</h2>
-          <Paragraph dark className="mt-4 text-dark_hint">
-            Since starting my journey as a web engineer almost 7 years prior,
+          <BodyHead dark>Skills & Experience</BodyHead>
+          <Paragraph dark className="mt-6 text-dark_hint">
+            Since starting my journey as a web developer almost 5 years prior,
             I've accomplished remote work for new companies, and teamed up with
             capable individuals to make web items for both business and customer
             use.
@@ -79,7 +75,7 @@ const Skills = () => {
               </a>
             </Link>{" "}
             profile for more details or just{" "}
-            <Link href="/contact">
+            <Link href="mailto:me@hrishavkumar.com">
               <a className="text-white">contact me</a>
             </Link>
             .
