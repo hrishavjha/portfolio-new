@@ -2,6 +2,7 @@ import styles from "@includes/Navbar.module.scss";
 import { Container } from "@layouts/Container";
 import Link from "next/link";
 import { useState } from "react";
+import RegularButton from "./Button";
 import NavLinks from "./Navbar.data";
 
 const Navbar = () => {
@@ -37,15 +38,9 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <Link href="mailto:jha2506@gmail.com">
-            <a
-              className={styles.contactBtn}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Contact Me
-            </a>
-          </Link>
+          <RegularButton href="mailto:me@hrishavkumar.com">
+            Contact me
+          </RegularButton>
         </ul>
         <div
           className={`${styles.hamMenu} ${navbar ? styles.hamMenuOpen : ""}`}

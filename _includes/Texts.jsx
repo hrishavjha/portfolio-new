@@ -21,4 +21,25 @@ const Paragraph = props => {
   );
 };
 
-export { Paragraph };
+const HeroHeading = props => {
+  return (
+    <h1 className={`${styles.heroHead} ${props.className}`} id={props.id}>
+      {props.children}
+    </h1>
+  );
+};
+
+const BodyHead = props => {
+  return (
+    <h2
+      className={`${styles.bodyHead} ${styles.className} ${
+        props.dark ? "text-white" : "text-primary"
+      }`}
+      id={props.id}
+    >
+      {props.children}
+    </h2>
+  );
+};
+
+export { Paragraph, HeroHeading, BodyHead };
