@@ -147,3 +147,44 @@ div.skillContFluid {
     }
   }
 }
+
+div.projectsContFluid {
+  padding: 2rem 0;
+  @include mediumScreens {
+    padding: 5rem 0;
+  }
+  div.projectsCont {
+    div.projectList {
+      margin-top: 2rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      @include mediumScreens {
+        margin-top: 3rem;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include largeScreens {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      div.projectCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: #f7f7f7;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: all 150ms ease-in;
+        img {
+          border-radius: 10px;
+          max-height: 300px;
+          width: auto;
+        }
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+}

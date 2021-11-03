@@ -6,10 +6,6 @@ const NavLinks = [
   {
     linkText: "About Me",
     linkTo: "/about"
-  },
-  {
-    linkText: "Projects",
-    linkTo: "/projects"
   }
 ];
 
