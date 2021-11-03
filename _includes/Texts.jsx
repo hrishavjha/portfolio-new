@@ -32,7 +32,7 @@ const HeroHeading = props => {
 const BodyHead = props => {
   return (
     <h2
-      className={`${styles.bodyHead} ${styles.className} ${
+      className={`${styles.bodyHead} ${props.className} ${
         props.dark ? "text-white" : "text-primary"
       }`}
       id={props.id}

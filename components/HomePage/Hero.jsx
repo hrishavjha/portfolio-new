@@ -45,7 +45,7 @@ const Hero = () => {
           </RegularButton>
         </div>
         <div className={styles.rightCont}>
-          <img src="/home/me.png" alt="Hrishav" draggable={false} />
+          <img src="/home/me.webp" alt="Hrishav" draggable={false} />
         </div>
       </div>
     </HeroContainer>
