@@ -9,11 +9,15 @@ const RegularButton = props => {
           className={`${styles.contactBtn} ${props.className}`}
           target="_blank"
           rel="noreferrer noopener"
+          aria-label={props.children}
         >
           {props.children}
         </a>
       ) : (
-        <a className={`${styles.contactBtn} ${props.className}`}>
+        <a
+          className={`${styles.contactBtn} ${props.className}`}
+          aria-label={props.children}
+        >
           {props.children}
         </a>
       )}

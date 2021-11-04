@@ -45,7 +45,7 @@ const Projects = () => {
                   alt={project.title}
                   draggable={false}
                 />
-                <p className="text-sm md:text-base mt-3 text-primary">
+                <p className="text-sm md:text-base mt-3 text-primary font-medium">
                   {project.title}
                 </p>
                 <p className="text-xs md:text-sm text-hint mt-1">
@@ -58,6 +58,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary text-sm md:text-base"
+                    aria-label={project.title}
                   >
                     Visit Link
                   </a>
@@ -68,6 +69,7 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary text-sm md:text-base"
+                    aria-label={project.title}
                   >
                     Check Repository
                   </a>

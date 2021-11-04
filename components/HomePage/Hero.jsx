@@ -22,6 +22,9 @@ const Hero = () => {
       .typeString("Gamer")
       .pauseFor(2000)
       .deleteAll()
+      .typeString("Photographer")
+      .pauseFor(2000)
+      .deleteAll()
       .start();
   }, []);
 

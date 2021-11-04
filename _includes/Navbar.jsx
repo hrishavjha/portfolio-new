@@ -19,7 +19,7 @@ const Navbar = () => {
     >
       <Container className={styles.navbarCont}>
         <Link href="/">
-          <a>
+          <a aria-label="Hrishav">
             <img
               src="/navbar/logo.svg"
               alt="Hrishav"
@@ -32,15 +32,20 @@ const Navbar = () => {
           {NavLinks.map(link => (
             <li key={link.linkText} className="inline-block">
               <Link href={link.linkTo}>
-                <a className="text-light_primary text-sm md:text-base hover:text-primary transition-all">
+                <a
+                  className="text-light_primary text-sm md:text-base hover:text-primary transition-all"
+                  aria-label={link.linkText}
+                >
                   {link.linkText}
                 </a>
               </Link>
             </li>
           ))}
-          <RegularButton href="mailto:me@hrishavkumar.com">
-            Contact me
-          </RegularButton>
+          <li>
+            <RegularButton href="mailto:me@hrishavkumar.com">
+              Contact me
+            </RegularButton>
+          </li>
         </ul>
         <div
           className={`${styles.hamMenu} ${navbar ? styles.hamMenuOpen : ""}`}
@@ -56,21 +61,27 @@ const Navbar = () => {
             {NavLinks.map(link => (
               <li key={link.linkText} className="inline-block">
                 <Link href={link.linkTo}>
-                  <a className="text-light_primary block p-2 text-center text-sm md:text-base hover:text-primary transition-all">
+                  <a
+                    className="text-light_primary block p-2 text-center text-sm md:text-base hover:text-primary transition-all"
+                    aria-label={link.linkText}
+                  >
                     {link.linkText}
                   </a>
                 </Link>
               </li>
             ))}
-            <Link href="mailto:jha2506@gmail.com">
-              <a
-                className="text-sm md:text-base bg-primary p-2 text-center text-white rounded-md"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Contact Me
-              </a>
-            </Link>
+            <li>
+              <Link href="mailto:jha2506@gmail.com">
+                <a
+                  className="text-sm md:text-base bg-primary p-2 text-center text-white rounded-md"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Contact Me"
+                >
+                  Contact Me
+                </a>
+              </Link>
+            </li>
           </ul>
         </Container>
       ) : (
