@@ -1,0 +1,48 @@
+@import "/styles/variables";
+@import "/styles/breakpoints";
+
+div.aboutHeroContFluid {
+  div.aboutHeroCont {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 60px;
+    @include mediumScreens {
+      margin-top: 80px;
+      padding-top: 3rem;
+      padding-bottom: 6rem;
+    }
+  }
+}
+
+div.meCont {
+  position: relative;
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 2px #333;
+    content: "";
+    top: -5px;
+    left: -5px;
+    border-radius: 10px;
+  }
+  @include mediumScreens {
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 0 2px #333;
+      content: "";
+      top: -10px;
+      left: -10px;
+      border-radius: 10px;
+    }
+  }
+  img.me {
+    z-index: 5;
+    position: relative;
+    max-height: 600px;
+    width: auto;
+    border-radius: 10px;
+  }
+}

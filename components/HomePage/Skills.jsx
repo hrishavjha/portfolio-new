@@ -53,9 +53,9 @@ const Skills = () => {
           <BodyHead>Skills & Experience</BodyHead>
           <Paragraph hint className="mt-6">
             Since starting my journey as a web developer almost 5 years prior,
-            I've accomplished remote work for new companies, and teamed up with
-            capable individuals to make web items for both business and customer
-            use.
+            I&apos;ve accomplished remote work for new companies, and teamed up
+            with capable individuals to make web items for both business and
+            customer use.
           </Paragraph>
           <Paragraph hint className="mt-2">
             I make effective responsive sites that are quick, simple to utilize,

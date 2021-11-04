@@ -73,7 +73,7 @@ const Navbar = () => {
             <li>
               <Link href="mailto:jha2506@gmail.com">
                 <a
-                  className="text-sm md:text-base bg-primary p-2 text-center text-white rounded-md"
+                  className="text-sm md:text-base bg-primary p-2 text-center text-white rounded-md block"
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label="Contact Me"

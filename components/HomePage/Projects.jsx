@@ -32,9 +32,9 @@ const Projects = () => {
       <Container className={styles.projectsCont}>
         <BodyHead className="text-center">Recent work</BodyHead>
         <Paragraph hint className="sm:max-w-xl text-center mx-auto mt-2">
-          A small gallery of recent projects made by me. I've done them all
-          together with amazing people. It's only a drop in the ocean compared
-          to the entire list.
+          A small gallery of recent projects made by me. I&apos;ve done them all
+          together with amazing people. It&apos;s only a drop in the ocean
+          compared to the entire list.
         </Paragraph>
         <div className={styles.projectList}>
           {ProjectData.map(project => (
