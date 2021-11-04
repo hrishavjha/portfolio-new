@@ -53,7 +53,7 @@ div.heroCont {
 // Skills Section
 
 div.skillContFluid {
-  background: $primary-text;
+  background: #f7f7f7;
   padding: 2rem 0;
   width: 100%;
   @include mediumScreens {
@@ -79,8 +79,8 @@ div.skillContFluid {
         width: 100%;
         div.slider {
           width: 100%;
-          h3 {
-            color: #ffffff;
+          p {
+            color: #333;
             font-size: 1rem;
             font-weight: 700;
             @include mediumScreens {
@@ -103,7 +103,7 @@ div.skillContFluid {
         margin-top: 2rem;
         div.jobCard {
           border-radius: 10px;
-          background: #3c4043;
+          background: #333;
           padding: 2rem 1.5rem;
           display: flex;
           flex-direction: column;

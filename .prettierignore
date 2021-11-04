@@ -16,16 +16,8 @@ node_modules/
 #vscode
 .vscode
 
-#lottie-animations
-components/Animations/
-
 #sitemap
 /public/sitemap.xml
-
-#rss feed
-/public/rss/feed.xml
-/public/rss/feed.json
-/public/rss/atom.xml
 
 #package-lock
 packagae-lock.json

@@ -22,6 +22,9 @@ const Hero = () => {
       .typeString("Gamer")
       .pauseFor(2000)
       .deleteAll()
+      .typeString("Photographer")
+      .pauseFor(2000)
+      .deleteAll()
       .start();
   }, []);
 
@@ -30,11 +33,11 @@ const Hero = () => {
       <div className={styles.heroCont}>
         <div className={styles.leftCont}>
           <HeroHeading>Hi,</HeroHeading>
-          <HeroHeading>I'm Hrishav,</HeroHeading>
+          <HeroHeading>I&apos;m Hrishav,</HeroHeading>
           <HeroHeading id="typewriter"></HeroHeading>
           <Paragraph hint className="sm:max-w-xl mt-4">
-            I'm a web developer based in India specializing in building (and
-            occasionally designing) exceptional websites, applications, and
+            I&apos;m a web developer based in India specializing in building
+            (and occasionally designing) exceptional websites, applications, and
             everything in between.
           </Paragraph>
           <RegularButton

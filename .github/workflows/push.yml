@@ -1,0 +1,19 @@
+name: push
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - staging
+
+jobs:
+  push-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: eslint
+        run: npm run lint

@@ -8,7 +8,7 @@ const Footer = () => {
     <ContainerFluid className={styles.footerContFluid}>
       <Container className={styles.footerCont}>
         <Link href="/">
-          <a>
+          <a aria-label="Hrishav">
             <svg
               width="40"
               height="50"
@@ -22,6 +22,52 @@ const Footer = () => {
             </svg>
           </a>
         </Link>
+        <ul className="flex gap-2 mt-4">
+          <li>
+            <Link href="https://github.com/hrishavjha">
+              <a target="_blank" rel="noopener noreferrer" aria-label="Github">
+                <img
+                  src="/footer/git.svg"
+                  alt="Github"
+                  height={24}
+                  width={24}
+                />
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.instagram.com/__hrishav__">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <img
+                  src="/footer/insta.svg"
+                  alt="Instagram"
+                  height={24}
+                  width={24}
+                />
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.facebook.com/jhahrishav">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <img
+                  src="/footer/fb.svg"
+                  alt="Facebook"
+                  height={24}
+                  width={24}
+                />
+              </a>
+            </Link>
+          </li>
+        </ul>
         <Paragraph dark className="mt-4 md:mt-6">
           &copy; 2021 Hrishav Kumar
         </Paragraph>

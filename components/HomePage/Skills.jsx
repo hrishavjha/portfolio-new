@@ -27,7 +27,7 @@ const Skills = () => {
           <div className={styles.skillSliders}>
             {Skills.map(skill => (
               <div key={skill.name} className={styles.slider}>
-                <h3>{skill.name}</h3>
+                <p>{skill.name}</p>
                 <div className={styles.logoBar}>
                   {skill.tech.map(lang => (
                     <img
@@ -50,33 +50,36 @@ const Skills = () => {
           </div>
         </div>
         <div className={styles.rightCont}>
-          <BodyHead dark>Skills & Experience</BodyHead>
-          <Paragraph dark className="mt-6 text-dark_hint">
+          <BodyHead>Skills & Experience</BodyHead>
+          <Paragraph hint className="mt-6">
             Since starting my journey as a web developer almost 5 years prior,
-            I've accomplished remote work for new companies, and teamed up with
-            capable individuals to make web items for both business and customer
-            use.
+            I&apos;ve accomplished remote work for new companies, and teamed up
+            with capable individuals to make web items for both business and
+            customer use.
           </Paragraph>
-          <Paragraph dark className="mt-2 text-dark_hint">
+          <Paragraph hint className="mt-2">
             I make effective responsive sites that are quick, simple to utilize,
             and worked with best practices. The fundamental space of my ability
             is front-end improvement, HTML, CSS, JS, fabricating little and
             medium web applications and coding intelligent designs.
           </Paragraph>
-          <Paragraph dark className="mt-2 text-dark_hint">
+          <Paragraph hint className="mt-2">
             Visit my{" "}
             <Link href="https://www.linkedin.com/in/hrishavjha/">
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                className="text-white"
+                className="underline"
+                aria-label="LinkedIn"
               >
                 LinkedIn
               </a>
             </Link>{" "}
             profile for more details or just{" "}
             <Link href="mailto:me@hrishavkumar.com">
-              <a className="text-white">contact me</a>
+              <a className="underline" aria-label="Contact me">
+                contact me
+              </a>
             </Link>
             .
           </Paragraph>
