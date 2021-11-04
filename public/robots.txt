@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.hrishavkumar.com
+
+# Sitemaps
+Sitemap: https://www.hrishavkumar.com/sitemap.xml
