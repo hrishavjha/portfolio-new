@@ -69,7 +69,7 @@ const Footer = () => {
           </li>
         </ul>
         <Paragraph dark className="mt-4 md:mt-6">
-          &copy; 2021 Hrishav Kumar
+          &copy;2022 Hrishav Kumar
         </Paragraph>
       </Container>
     </ContainerFluid>

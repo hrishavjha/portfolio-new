@@ -28,6 +28,8 @@ const AboutHero = () => {
               src="/about/self.webp"
               alt="Hrishav"
               draggable={false}
+              width={400}
+              height={600}
             />
           </div>
         </div>
