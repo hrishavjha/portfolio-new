@@ -43,9 +43,9 @@ const Skills = () => {
           </div>
           <div className={styles.jobExp}>
             <div className={styles.jobCard}>
-              <h3>Web Developer</h3>
-              <p className={styles.company}>ChaosNative</p>
-              <p className={styles.timeSpan}>May 2021 - Present</p>
+              <h3>Frontend Developer</h3>
+              <p className={styles.company}>Harness</p>
+              <p className={styles.timeSpan}>Mar 2022 - Present</p>
             </div>
           </div>
         </div>
