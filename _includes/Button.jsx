@@ -3,24 +3,14 @@ import Link from "next/link";
 
 const RegularButton = props => {
   return (
-    <Link href={props.href}>
-      {props.external ? (
-        <a
-          className={`${styles.contactBtn} ${props.className}`}
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label={props.children}
-        >
-          {props.children}
-        </a>
-      ) : (
-        <a
-          className={`${styles.contactBtn} ${props.className}`}
-          aria-label={props.children}
-        >
-          {props.children}
-        </a>
-      )}
+    <Link
+      href={props.href}
+      className={`${styles.contactBtn} ${props.className}`}
+      target={props.external ? "_blank" : "_self"}
+      rel={props.external ? "noopener noreferrer" : ""}
+      aria-label={props.children}
+    >
+      {props.children}
     </Link>
   );
 };

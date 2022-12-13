@@ -2,13 +2,12 @@ const { colors } = require("tailwindcss/defaultTheme");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: [
+  content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./_includes/**/*.{js,ts,jsx,tsx}",
     "./_layouts/**/*.{js,ts,jsx,tsx}"
   ],
-  darkMode: false,
   theme: {
     extend: {
       fontFamily: {

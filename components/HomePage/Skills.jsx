@@ -65,21 +65,22 @@ const Skills = () => {
           </Paragraph>
           <Paragraph hint className="mt-2">
             Visit my{" "}
-            <Link href="https://www.linkedin.com/in/hrishavjha/">
-              <a
-                target="_blank"
-                rel="noreferrer noopener"
-                className="underline"
-                aria-label="LinkedIn"
-              >
-                LinkedIn
-              </a>
+            <Link
+              href="https://www.linkedin.com/in/hrishavjha/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline"
+              aria-label="LinkedIn"
+            >
+              LinkedIn
             </Link>{" "}
             profile for more details or just{" "}
-            <Link href="mailto:me@hrishavkumar.com">
-              <a className="underline" aria-label="Contact me">
-                contact me
-              </a>
+            <Link
+              href="mailto:jha2506@gmail.com"
+              className="underline"
+              aria-label="Contact me"
+            >
+              contact me
             </Link>
             .
           </Paragraph>

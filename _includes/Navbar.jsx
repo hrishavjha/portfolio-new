@@ -18,31 +18,28 @@ const Navbar = () => {
       }`}
     >
       <Container className={styles.navbarCont}>
-        <Link href="/">
-          <a aria-label="Hrishav">
-            <img
-              src="/navbar/logo.svg"
-              alt="Hrishav"
-              draggable={false}
-              className="h-10 md:h-12 w-auto"
-            />
-          </a>
+        <Link href="/" aria-label="Hrishav">
+          <img
+            src="/navbar/logo.svg"
+            alt="Hrishav"
+            draggable={false}
+            className="h-10 md:h-12 w-auto"
+          />
         </Link>
         <ul className="gap-4 items-center hidden md:flex">
           {NavLinks.map(link => (
             <li key={link.linkText} className="inline-block">
-              <Link href={link.linkTo}>
-                <a
-                  className="text-light_primary text-sm md:text-base hover:text-primary transition-all"
-                  aria-label={link.linkText}
-                >
-                  {link.linkText}
-                </a>
+              <Link
+                href={link.linkTo}
+                className="text-light_primary text-sm md:text-base hover:text-primary transition-all"
+                aria-label={link.linkText}
+              >
+                {link.linkText}
               </Link>
             </li>
           ))}
           <li>
-            <RegularButton href="mailto:me@hrishavkumar.com">
+            <RegularButton href="mailto:jha2506@gmail.com">
               Contact me
             </RegularButton>
           </li>
@@ -60,26 +57,24 @@ const Navbar = () => {
           <ul className="flex flex-col gap-4">
             {NavLinks.map(link => (
               <li key={link.linkText} className="inline-block">
-                <Link href={link.linkTo}>
-                  <a
-                    className="text-light_primary block p-2 text-center text-sm md:text-base hover:text-primary transition-all"
-                    aria-label={link.linkText}
-                  >
-                    {link.linkText}
-                  </a>
+                <Link
+                  href={link.linkTo}
+                  className="text-light_primary block p-2 text-center text-sm md:text-base hover:text-primary transition-all"
+                  aria-label={link.linkText}
+                >
+                  {link.linkText}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href="mailto:jha2506@gmail.com">
-                <a
-                  className="text-sm md:text-base bg-primary p-2 text-center text-white rounded-md block"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Contact Me"
-                >
-                  Contact Me
-                </a>
+              <Link
+                href="mailto:jha2506@gmail.com"
+                className="text-sm md:text-base bg-primary p-2 text-center text-white rounded-md block"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Contact Me"
+              >
+                Contact Me
               </Link>
             </li>
           </ul>

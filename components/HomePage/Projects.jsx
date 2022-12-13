@@ -53,26 +53,24 @@ const Projects = () => {
                 </p>
               </div>
               {project.link ? (
-                <Link href={project.link}>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary text-sm md:text-base"
-                    aria-label={project.title}
-                  >
-                    Visit Link
-                  </a>
+                <Link
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary text-sm md:text-base"
+                  aria-label={project.title}
+                >
+                  Visit Link
                 </Link>
               ) : (
-                <Link href={project.git}>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary text-sm md:text-base"
-                    aria-label={project.title}
-                  >
-                    Check Repository
-                  </a>
+                <Link
+                  href={project.git}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary text-sm md:text-base"
+                  aria-label={project.title}
+                >
+                  Check Repository
                 </Link>
               )}
             </div>
