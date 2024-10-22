@@ -41,7 +41,7 @@ const Hero = () => {
             everything in between.
           </Paragraph>
           <RegularButton
-            href="mailto:me@hrishavkumar.com"
+            href="mailto:jha2506@gmail.com"
             className={styles.heroButton}
           >
             Get in touch
