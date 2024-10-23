@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "next": "15.0.0",
-    "next-seo": "^5.15.0",
+    "next-seo": "^6.6.0",
     "next-sitemap": "^3.1.44",
     "react": "19.0.0-rc-65a56d0e-20241020",
     "react-dom": "19.0.0-rc-65a56d0e-20241020",
